@@ -67,7 +67,7 @@ main {
     border-radius: 10px;
 }
 
-.card h4 {
+.card h2 {
     display: block;
     background-color: rgb(15, 91, 117);
     color: white;
