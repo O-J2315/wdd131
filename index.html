@@ -7,6 +7,7 @@
     <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Josue Hernandez Medina | Index page sumary">
     <meta name="author" content="Josue Hernandez Medina">
     <link rel="stylesheet" href="/styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
 
@@ -24,12 +25,15 @@
         <section class="card" id="aboutMeCard">
             <h4>About Me</h4>
             <div class="p-img-right-container">
-                <p>My Name is josue hernandez. I was born in ciudad juarez, chihuahua mexico. im currently studying computer science and want to transfer to provo asap</p>
+                <p>My Name is josue hernandez. I was born in ciudad juarez, chihuahua mexico. im currently studying computer science and want to transfer to provo asap Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odit quod enim maxime illo fuga provident aliquam magni minima mollitia labore totam earum beatae, porro quo dignissimos et assumenda. Quibusdam?</p>
                 <img src="images/josueportrait.jpeg" alt="josueportrait">
             </div>
             <h3>Chihuahua, Mexico</h3>
             <div class="p-img-left-container">
-                <img src="images/mexicoflag.png" alt="mexicoflag">Official flag of Mexico
+                <figure>
+                    <img src="images/mexicoflag.webp" alt="mexicoflag">
+                    <figcaption>Official flag of Mexico</figcaption>
+                </figure>
                 <p>Mexico, officially the United Mexican States, is a country in the southern portion of North America. It covers 1,972,550 km, making it the world's 13th-largest country by area; with a population of almost 130 million, it is the 10th-most-populous country and has the most Spanish speakers.</p>
             </div>
         </section>
@@ -45,11 +49,11 @@
     </main>
 
     <footer>
-        <p>
+        <p class="p-1-white">
             ©️<span id="currentyear"></span> 🚀 Josue Hernandez Medina 🚀 Mexico
         </p>
-        <p>
-            <span id="lastModified"></span>
+        <p class="p-2-yellow">
+            Last Modification: <span id="lastModified"></span>
         </p>
     </footer>
 
