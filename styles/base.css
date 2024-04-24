@@ -99,6 +99,7 @@ main {
     width: 20%;
     margin-right: 1rem;
     margin-top: 1rem;
+    border-radius: 2px;
 }
 
 .card h3 {
@@ -137,6 +138,7 @@ figure img {
     justify-self: center;
     width: 100%;
     max-height: 80%;
+    border-radius: 2px;
 }
 
 figcaption {
@@ -147,7 +149,7 @@ ul {
     display: block;
     width: 90%;
     margin-left: 1rem;
-    margin-top: 30%;
+    margin-top: 20%;
     align-items: center;
     justify-content: center;
     padding: 2rem;
@@ -159,6 +161,7 @@ li {
 
 li a{
     text-decoration: none;
+    font-size: larger;
 }
 
 li a:hover {
