@@ -6,6 +6,9 @@ console.log(input);
 console.log(button2);
 console.log(list);
 
+list.style.fontWeight = 300;
+
+
 
 button2.addEventListener('click', function(){
     console.log("hy");
