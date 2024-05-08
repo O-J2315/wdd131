@@ -128,7 +128,7 @@ header h1 {
     font-weight: 300;
     border: none;
     background-color: var(--backgroudcolor);
-    font-family: "Sedan SC" serif;
+    font-family: "Sedan SC", serif;
 }
 
 .labels input:focus {
