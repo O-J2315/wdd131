@@ -48,7 +48,7 @@ header h1 {
 }
 
 .hero picture img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     border-bottom: solid .5rem var(--secondcolor);
