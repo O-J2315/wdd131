@@ -10,7 +10,6 @@
 
 body {
     font-family: "Sedan SC", serif;
-    font-weight: 500;
     font-style: normal;
 }
 
@@ -78,6 +77,7 @@ header h1 {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
     /* border: solid 1px red; */
 }
 
@@ -87,7 +87,8 @@ header h1 {
 }
 
 .labels span {
-    font-weight: 300;
+    font-weight: 100;
+    font-size: 1.3rem;
 }
 
 .weather {
@@ -120,15 +121,16 @@ header h1 {
 
 .labels label {
     text-align: right;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .labels input {
     text-align: left;
-    font-weight: 300;
+    font-weight: 500;
     border: none;
     background-color: var(--backgroudcolor);
-    font-family: "Sedan SC", serif;
+    font-family: "Sedan SC";
+    font-size: 1.3rem;
 }
 
 .labels input:focus {
