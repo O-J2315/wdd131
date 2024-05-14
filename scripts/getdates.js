@@ -24,3 +24,13 @@ if ( count > 0 ) {
   console.log("No scores reported.");
 }
 
+let courseName = 'math';
+let stuFirstName = 'josue';
+let babygender = 'boy';
+let reveal = document.getElementById("reveal");
+reveal.innerHTML = `Welcome to the ${courseName} ${stuFirstName}!`;
+
+
+let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'}
+const dose = esomeprazole[0].amount[1]; 
+console.log(dose)
