@@ -29,7 +29,7 @@ const temples = [
 	  dedicated: "2015, June, 7",
 	  area: 96630,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1449483-wallpaper.jpg"
 	},
 	{
 	  templeName: "Yigo Guam",
@@ -45,7 +45,7 @@ const temples = [
 	  dedicated: "1974, November, 19",
 	  area: 156558,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpg"
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/exterior_washington_dc_temple.jpeg"
 	},
 	{
 	  templeName: "Lima Perú",
