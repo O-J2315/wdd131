@@ -49,8 +49,6 @@ main {
 main h2 {
     text-align: center;
     padding: 1rem;
-    border-bottom: solid 1px rgb(15, 91, 117);
-    border-radius: 15px;
 }
 
 .temple-card img{
