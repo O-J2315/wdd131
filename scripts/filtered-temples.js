@@ -100,7 +100,7 @@ const displayHomeTemples = function(){
 									<p><strong>Location:</strong> ${temple.location}</p>
 									<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 									<p><strong>Size:</strong> ${temple.area} sq ft</p>
-									<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">`;
+									<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 		mainElement.appendChild(templeFigure);
 	});
 	console.log("Run well");
@@ -117,7 +117,7 @@ const displayOldTemples = function(){
 										<p><strong>Location:</strong> ${temple.location}</p>
 										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 										<p><strong>Size:</strong> ${temple.area} sq ft</p>
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a recent temple`);
@@ -136,7 +136,7 @@ const displayNewTemples = function(){
 										<p><strong>Location:</strong> ${temple.location}</p>
 										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 										<p><strong>Size:</strong> ${temple.area} sq ft</p>
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is an old temple`);
@@ -155,7 +155,7 @@ const displayLargeTemples = function(){
 										<p><strong>Location:</strong> ${temple.location}</p>
 										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 										<p><strong>Size:</strong> ${temple.area} sq ft</p>
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a small temple`);
@@ -174,7 +174,7 @@ const displaySmallTemples = function (){
 										<p><strong>Location:</strong> ${temple.location}</p>
 										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 										<p><strong>Size:</strong> ${temple.area} sq ft</p>
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a large temple`);
