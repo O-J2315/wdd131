@@ -68,6 +68,23 @@ main h2 {
     border-radius: 1rem;
 }
 
+.temple-card figcaption {
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr 1fr ;
+    gap: .2rem;
+    font-size: .8rem;
+    text-align: left;
+    padding-top: .5rem;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+figcaption strong{
+    text-align: right;
+}
+
 footer {
     display: flex;
     flex-direction: column;

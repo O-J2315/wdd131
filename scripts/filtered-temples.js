@@ -17,7 +17,7 @@ const temples = [
 	},
 	{
 	  templeName: "Manti Utah",
-	  location: "Manti, Utah, United States",
+	  location: "Manti, UT, United States",
 	  dedicated: "1888, May, 21",
 	  area: 74792,
 	  imageUrl:
@@ -25,7 +25,7 @@ const temples = [
 	},
 	{
 	  templeName: "Payson Utah",
-	  location: "Payson, Utah, United States",
+	  location: "Payson, UT, United States",
 	  dedicated: "2015, June, 7",
 	  area: 96630,
 	  imageUrl:
@@ -41,7 +41,7 @@ const temples = [
 	},
 	{
 	  templeName: "Washington D.C.",
-	  location: "Kensington, Maryland, United States",
+	  location: "Kensington, MD, United States",
 	  dedicated: "1974, November, 19",
 	  area: 156558,
 	  imageUrl:
@@ -65,7 +65,7 @@ const temples = [
 	},
 	{
 		templeName: "Ciudad Juarez Mexico",
-		location: "Ciudad Juarez, Chihuahua, Mexico",
+		location: "Ciudad Juarez, CHI, Mexico",
 		dedicated: "2000, February, 26",
 		area: 10700,
 		imageUrl:
@@ -73,7 +73,7 @@ const temples = [
 	  },
 	  {
 		templeName: "Las Vegas Nevada",
-		location: "Las Vegas, Nevada, United States",
+		location: "Las Vegas, NV, United States",
 		dedicated: "1989, December, 16",
 		area: 80350,
 		imageUrl:
@@ -81,7 +81,7 @@ const temples = [
 	  },
 	  {
 		templeName: "Nauvoo Illinois Temple",
-		location: "Nauvoo, Illinois, United States",
+		location: "Nauvoo, IL, United States",
 		dedicated: "2002, June, 27",
 		area: 54000,
 		imageUrl:
@@ -96,10 +96,10 @@ const displayHomeTemples = function(){
 	temples.forEach( (temple) => {
 		let templeFigure = document.createElement('figure');
 		templeFigure.setAttribute("class", "temple-card")
-		templeFigure.innerHTML = `	<h3>${temple.templeName}</h3>
-									<p><strong>Location:</strong> ${temple.location}</p>
-									<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-									<p><strong>Size:</strong> ${temple.area} sq ft</p>
+		templeFigure.innerHTML = 	`<h3>${temple.templeName}</h3>
+									<figcaption><strong>Location:</strong> ${temple.location}
+									<strong>Dedicated:</strong> ${temple.dedicated}\n
+									<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
 									<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 		mainElement.appendChild(templeFigure);
 	});
@@ -110,13 +110,13 @@ const displayOldTemples = function(){
 	mainElement.innerHTML="";
 	temples.forEach( (temple) => {
 		let year = temple.dedicated.split(',')[0];
-		if(parseInt(year) <= 1900){
+		if(parseInt(year) < 1900){
 			let templeFigure = document.createElement('figure');
 			templeFigure.setAttribute("class", "temple-card")
-			templeFigure.innerHTML = `	<h3>${temple.templeName}</h3>
-										<p><strong>Location:</strong> ${temple.location}</p>
-										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-										<p><strong>Size:</strong> ${temple.area} sq ft</p>
+			templeFigure.innerHTML = 	`<h3>${temple.templeName}</h3>
+										<figcaption><strong>Location:</strong> ${temple.location}
+										<strong>Dedicated:</strong> ${temple.dedicated}\n
+										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
 										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
@@ -129,13 +129,13 @@ const displayNewTemples = function(){
 	mainElement.innerHTML="";
 	temples.forEach( (temple) => {
 		let year = temple.dedicated.split(',')[0];
-		if(parseInt(year) >= 2000){
+		if(parseInt(year) > 2000){
 			let templeFigure = document.createElement('figure');
 			templeFigure.setAttribute("class", "temple-card")
-			templeFigure.innerHTML = `	<h3>${temple.templeName}</h3>
-										<p><strong>Location:</strong> ${temple.location}</p>
-										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-										<p><strong>Size:</strong> ${temple.area} sq ft</p>
+			templeFigure.innerHTML = 	`<h3>${temple.templeName}</h3>
+										<figcaption><strong>Location:</strong> ${temple.location}
+										<strong>Dedicated:</strong> ${temple.dedicated}\n
+										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
 										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
@@ -151,10 +151,10 @@ const displayLargeTemples = function(){
 		if(parseInt(area) > 90000){
 			let templeFigure = document.createElement('figure');
 			templeFigure.setAttribute("class", "temple-card")
-			templeFigure.innerHTML = `	<h3>${temple.templeName}</h3>
-										<p><strong>Location:</strong> ${temple.location}</p>
-										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-										<p><strong>Size:</strong> ${temple.area} sq ft</p>
+			templeFigure.innerHTML = 	`<h3>${temple.templeName}</h3>
+										<figcaption><strong>Location:</strong> ${temple.location}
+										<strong>Dedicated:</strong> ${temple.dedicated}\n
+										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
 										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
@@ -170,10 +170,10 @@ const displaySmallTemples = function (){
 		if(parseInt(area) < 10000){
 			let templeFigure = document.createElement('figure');
 			templeFigure.setAttribute("class", "temple-card")
-			templeFigure.innerHTML = `	<h3>${temple.templeName}</h3>
-										<p><strong>Location:</strong> ${temple.location}</p>
-										<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-										<p><strong>Size:</strong> ${temple.area} sq ft</p>
+			templeFigure.innerHTML = 	`<h3>${temple.templeName}</h3>
+										<figcaption><strong>Location:</strong> ${temple.location}
+										<strong>Dedicated:</strong> ${temple.dedicated}\n
+										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
 										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
