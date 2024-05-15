@@ -53,6 +53,8 @@ main h2 {
 }
 
 .temple-card img{
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     padding-top: 1rem;
 }
