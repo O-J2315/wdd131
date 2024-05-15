@@ -180,7 +180,6 @@ const displaySmallTemples = function (){
 			// console.log(`${temple.templeName} is a large temple`);
 		}
 	});
-	console.log('this function ran');
 };
 
 
