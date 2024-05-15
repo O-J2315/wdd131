@@ -92,7 +92,7 @@ const temples = [
 let mainElement = document.getElementById("main");
 
 const displayHomeTemples = function(){
-	mainElement.innerHTML="";
+	mainElement.innerHTML='<h2 id="menu-selection">Menu</h2>';
 	temples.forEach( (temple) => {
 		let templeFigure = document.createElement('figure');
 		templeFigure.setAttribute("class", "temple-card")
@@ -107,7 +107,7 @@ const displayHomeTemples = function(){
 };
 
 const displayOldTemples = function(){
-	mainElement.innerHTML="";
+	mainElement.innerHTML='<h2 id="menu-selection">Menu</h2>';
 	temples.forEach( (temple) => {
 		let year = temple.dedicated.split(',')[0];
 		if(parseInt(year) < 1900){
@@ -126,7 +126,7 @@ const displayOldTemples = function(){
 };
 
 const displayNewTemples = function(){
-	mainElement.innerHTML="";
+	mainElement.innerHTML='<h2 id="menu-selection">Menu</h2>';
 	temples.forEach( (temple) => {
 		let year = temple.dedicated.split(',')[0];
 		if(parseInt(year) > 2000){
@@ -145,7 +145,7 @@ const displayNewTemples = function(){
 };
 
 const displayLargeTemples = function(){
-	mainElement.innerHTML="";
+	mainElement.innerHTML='<h2 id="menu-selection">Menu</h2>';
 	temples.forEach( (temple) => {
 		let area = temple.area;
 		if(parseInt(area) > 90000){
@@ -164,7 +164,7 @@ const displayLargeTemples = function(){
 };
 
 const displaySmallTemples = function (){
-	mainElement.innerHTML="";
+	mainElement.innerHTML='<h2 id="menu-selection">Menu</h2>';
 	temples.forEach( (temple) => {
 		let area = temple.area;
 		if(parseInt(area) < 10000){
