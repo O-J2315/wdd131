@@ -13,7 +13,7 @@ const temples = [
 	  dedicated: "2005, August, 7",
 	  area: 11500,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+	  "images/abanigeria.webp"
 	},
 	{
 	  templeName: "Manti Utah",
@@ -21,7 +21,7 @@ const temples = [
 	  dedicated: "1888, May, 21",
 	  area: 74792,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+	  "images/mantiutah.webp"
 	},
 	{
 	  templeName: "Payson Utah",
@@ -29,7 +29,7 @@ const temples = [
 	  dedicated: "2015, June, 7",
 	  area: 96630,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1449483-wallpaper.jpg"
+	  "images/paysonutah.webp"
 	},
 	{
 	  templeName: "Yigo Guam",
@@ -37,7 +37,7 @@ const temples = [
 	  dedicated: "2020, May, 2",
 	  area: 6861,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+	  "images/yigoguam.webp"
 	},
 	{
 	  templeName: "Washington D.C.",
@@ -45,7 +45,7 @@ const temples = [
 	  dedicated: "1974, November, 19",
 	  area: 156558,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/exterior_washington_dc_temple.jpeg"
+	  "images/washingtondc.webp"
 	},
 	{
 	  templeName: "Lima Perú",
@@ -53,7 +53,7 @@ const temples = [
 	  dedicated: "1986, January, 10",
 	  area: 9600,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-lds-894702-wallpaper.jpg"
+	  "images/limaperu.webp"
 	},
 	{
 	  templeName: "Mexico City Mexico",
@@ -61,7 +61,7 @@ const temples = [
 	  dedicated: "1983, December, 2",
 	  area: 116642,
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-lds-591669-wallpaper.jpg"
+	  "images/mexicocity.webp"
 	},
 	{
 		templeName: "Ciudad Juarez Mexico",
@@ -69,7 +69,7 @@ const temples = [
 		dedicated: "2000, February, 26",
 		area: 10700,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/ciudad-juarez-mexico/400x250/ciudad-juarez-mexico-temple-1528222-wallpaper.jpg"
+		"images/ciudadjuarez.webp"
 	  },
 	  {
 		templeName: "Las Vegas Nevada",
@@ -77,7 +77,7 @@ const temples = [
 		dedicated: "1989, December, 16",
 		area: 80350,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/las-vegas-nevada/400x250/las-vegas-temple-lds-758757-wallpaper.jpg"
+		"images/lasvegastemple.webp"
 	  },
 	  {
 		templeName: "Nauvoo Illinois Temple",
@@ -85,7 +85,7 @@ const temples = [
 		dedicated: "2002, June, 27",
 		area: 54000,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nauvoo-illinois/400x250/nauvoo-temple-756499-wallpaper.jpg"
+		"images/nauvooillinois.webp"
 	  },
   ];
 
@@ -100,7 +100,7 @@ const displayHomeTemples = function(){
 									<figcaption><strong>Location:</strong> ${temple.location}
 									<strong>Dedicated:</strong> ${temple.dedicated}\n
 									<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
-									<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
+									<img src="${temple.imageUrl}" alt="${temple.templeName}" width="399" height="250" loading="lazy">`;
 		mainElement.appendChild(templeFigure);
 	});
 	console.log("Run well");
@@ -117,7 +117,7 @@ const displayOldTemples = function(){
 										<figcaption><strong>Location:</strong> ${temple.location}
 										<strong>Dedicated:</strong> ${temple.dedicated}\n
 										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="399" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a recent temple`);
@@ -136,7 +136,7 @@ const displayNewTemples = function(){
 										<figcaption><strong>Location:</strong> ${temple.location}
 										<strong>Dedicated:</strong> ${temple.dedicated}\n
 										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="399" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is an old temple`);
@@ -155,7 +155,7 @@ const displayLargeTemples = function(){
 										<figcaption><strong>Location:</strong> ${temple.location}
 										<strong>Dedicated:</strong> ${temple.dedicated}\n
 										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="399" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a small temple`);
@@ -174,7 +174,7 @@ const displaySmallTemples = function (){
 										<figcaption><strong>Location:</strong> ${temple.location}
 										<strong>Dedicated:</strong> ${temple.dedicated}\n
 										<strong>Size:</strong> ${temple.area} sq ft</figcaption>\n
-										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">`;
+										<img src="${temple.imageUrl}" alt="${temple.templeName}" width="399" height="250" loading="lazy">`;
 			mainElement.appendChild(templeFigure);
 		}else{
 			// console.log(`${temple.templeName} is a large temple`);

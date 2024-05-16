@@ -33,16 +33,12 @@ header a:hover {
 }
 
 main {
-    max-width: 600px;
-    margin: 1rem auto;
-}
-
-main {
     display: grid;
     grid-template-rows: 1fr;
     background-color: rgb(255, 242, 227);
     border-radius: 5px;
     padding: 1rem;
+    gap: 1rem;
     /* border: solid 1px red; */
 }
 
@@ -94,12 +90,10 @@ footer {
 
 .p-1-white {
     color: white;
-    font-size: larger;
 }
 
 .p-2-yellow {
     color: rgb(255, 232, 196);
-    font-size: large;
 }
 
 /* Menu hamburger thing ⬇️*/
