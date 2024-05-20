@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 Form | Josue Hernandez</title>
+    <meta name="author" content="Josue Hernandez">
+    <meta name="description" content="Form page. Activity is a product review page">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <script defer src="/scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product...</option>
+            </select>
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <div class="wrapper">
+                    <div class="mini-wrap">
+                        <input type="radio" id="one" value="1" name="overallRating" required>
+                        <label for="one">⭐</label>
+                    </div>
+                    <div class="mini-wrap">
+                        <input type="radio" id="two" value="2" name="overallRating" required>
+                        <label for="one">⭐⭐</label>
+                    </div>
+                    <div class="mini-wrap">
+                        <input type="radio" id="three" value="3" name="overallRating" required>
+                        <label for="one">⭐⭐⭐</label>
+                    </div>
+                    <div class="mini-wrap">
+                        <input type="radio" id="four" value="4" name="overallRating" required>
+                        <label for="one">⭐⭐⭐⭐</label>
+                    </div>
+                    <div class="mini-wrap">
+                        <input type="radio" id="five" value="5" name="overallRating" required>
+                        <label for="one">⭐⭐⭐⭐⭐</label>
+                    </div>
+                </div>
+            </fieldset>
+            <label for="installationDate">Date of Installaation</label>
+            <input type="date" id="installationDate" name="installationDate" min="2018-01-01" required>
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?<span><br>(select all that apply)</span></legend>
+                <div class="wrapper-2">
+                    <div class="mini-wrap-reverse">
+                        <input type="checkbox" id="durability" name="durability" value="durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div class="mini-wrap-reverse">
+                        <input type="checkbox" id="easeofuse" name="easeofuse" value="easeofuse">
+                        <label for="easeofuse">Ease of Use</label>
+                    </div>
+                    <div class="mini-wrap-reverse">
+                        <input type="checkbox" id="performance" name="performance" value="performance"> 
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div class="mini-wrap-reverse">
+                        <input type="checkbox" id="design" name="design" value="design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+            </fieldset>       
+        <div class="review">
+            <label for="writtenreview">Written Review</label>
+            <textarea id="writtenreview" name="writtenreview" rows="5" cols="30" placeholder="Great Product..."></textarea>
+        </div>
+
+        <div class="name">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name">
+        </div>
+            <button type="submit" value="Send Post Review">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p class="p-1-white">
+            ©️<span id="currentyear"></span> 🚀 Josue Hernandez Medina 🚀 Mexico
+        </p>
+        <p class="p-2-yellow">
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
