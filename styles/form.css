@@ -17,11 +17,31 @@ header h1 {
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
+header h2 {
+    display: block;
+    padding: 1rem;
+    background-color: rgb(22, 73, 117);
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 5rem;
+    margin-top: 25%;
+}
+main h4 {
+    text-align: center;
+}
 
 main {
     background-color: aliceblue;
     padding: 1rem;
     border-radius: 10px;
+}
+
+main a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
 form {
@@ -50,10 +70,12 @@ form input[type=date]{
     border: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0;
 }
 
 .rating legend {
     font-size: .9rem;
+    padding-bottom: .5rem;
 }
 
 .wrapper{
@@ -70,8 +92,10 @@ form input[type=date]{
 .features {
     margin-top: 2rem;
     border: none;
+    text-align: left;
+    padding: 0;
 }
-.features span {
+.span-italic {
     font-style: italic;
     font-size: .8rem;
 }
@@ -153,6 +177,10 @@ select:hover{
     transition: 500ms;
 }
 
+.required::before {
+    content: '*';
+    color: red;
+}
 @media screen and (min-width: 500px) {
     body {
         max-width: 65%;

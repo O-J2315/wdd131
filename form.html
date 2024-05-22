@@ -15,55 +15,55 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form action="review.html" method="get">
-            <label for="productName">Product Name</label>
+        <form id="myForm" action="review.html" method="get">
+            <label for="productName">Product Name<span class="required"></span></label>
             <select id="productName" name="productName" required>
-                <option value="" disabled selected>Choose a Product...</option>
+                <option value='' disabled selected>Choose a Product...</option>
             </select>
             <fieldset class="rating">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating<span class="required"></span></legend>
                 <div class="wrapper">
                     <div class="mini-wrap">
                         <input type="radio" id="one" value="1" name="overallRating" required>
-                        <label for="one">⭐</label>
+                        <label id="radio1" for="one">⭐</label>
                     </div>
                     <div class="mini-wrap">
                         <input type="radio" id="two" value="2" name="overallRating" required>
-                        <label for="one">⭐⭐</label>
+                        <label id="radio2" for="two">⭐⭐</label>
                     </div>
                     <div class="mini-wrap">
                         <input type="radio" id="three" value="3" name="overallRating" required>
-                        <label for="one">⭐⭐⭐</label>
+                        <label id="radio3" for="three">⭐⭐⭐</label>
                     </div>
                     <div class="mini-wrap">
                         <input type="radio" id="four" value="4" name="overallRating" required>
-                        <label for="one">⭐⭐⭐⭐</label>
+                        <label id="radio4" for="four">⭐⭐⭐⭐</label>
                     </div>
                     <div class="mini-wrap">
                         <input type="radio" id="five" value="5" name="overallRating" required>
-                        <label for="one">⭐⭐⭐⭐⭐</label>
+                        <label id="radio5" for="five">⭐⭐⭐⭐⭐</label>
                     </div>
                 </div>
             </fieldset>
-            <label for="installationDate">Date of Installaation</label>
+            <label for="installationDate">Date of Installaation<span class="required"></span></label>
             <input type="date" id="installationDate" name="installationDate" min="2018-01-01" required>
             <fieldset class="features">
-                <legend>Which features did you find useful in the product?<span><br>(select all that apply)</span></legend>
+                <legend>Which features did you find useful in the product?<span class="span-italic"><br>(select all that apply)</span></legend>
                 <div class="wrapper-2">
                     <div class="mini-wrap-reverse">
-                        <input type="checkbox" id="durability" name="durability" value="durability">
+                        <input type="checkbox" id="durability" name="durability" value="durability" >
                         <label for="durability">Durability</label>
                     </div>
                     <div class="mini-wrap-reverse">
-                        <input type="checkbox" id="easeofuse" name="easeofuse" value="easeofuse">
+                        <input type="checkbox" id="easeofuse" name="easeofuse" value="easeofuse" >
                         <label for="easeofuse">Ease of Use</label>
                     </div>
                     <div class="mini-wrap-reverse">
-                        <input type="checkbox" id="performance" name="performance" value="performance"> 
+                        <input type="checkbox" id="performance" name="performance" value="performance" > 
                         <label for="performance">Performance</label>
                     </div>
                     <div class="mini-wrap-reverse">
-                        <input type="checkbox" id="design" name="design" value="design">
+                        <input type="checkbox" id="design" name="design" value="design" >
                         <label for="design">Design</label>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
             <label for="name">Your name</label>
             <input type="text" id="name" name="name">
         </div>
-            <button type="submit" value="Send Post Review">Post Review</button>
+            <button id="mySubmit" type="submit" value="Send Post Review">Post Review</button>
         </form>
     </main>
     <footer>
