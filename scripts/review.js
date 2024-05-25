@@ -17,4 +17,5 @@ function addReview() {
     counter = counter + 1;
     localStorage.setItem('numOfReviews', counter.toString());
     document.getElementById('reviews').innerText = localStorage.getItem('numOfReviews');
+    console.log(counter);
 }
