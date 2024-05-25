@@ -2,6 +2,9 @@
 
 function checkFirstTime(){
     let counter = parseInt(localStorage.getItem('numOfReviews'));
+    if(isNaN(counter)){
+        counter = 0;
+    }
     if(counter!=0){
        addReview();
     }else{
