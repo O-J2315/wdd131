@@ -1,7 +1,5 @@
 
 
-window.onload = checkFirstTime();
-
 function checkFirstTime(){
     let counter = parseInt(localStorage.getItem('numOfReviews'));
     if(counter!=0){
@@ -19,3 +17,5 @@ function addReview() {
     document.getElementById('reviews').innerText = localStorage.getItem('numOfReviews');
     console.log(counter);
 }
+
+window.onload = checkFirstTime;
