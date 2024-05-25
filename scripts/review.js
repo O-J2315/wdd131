@@ -1,6 +1,6 @@
 
 
-window.onload = checkFirstTime;
+window.onload = checkFirstTime();
 
 function checkFirstTime(){
     let counter = parseInt(localStorage.getItem('numOfReviews'));
