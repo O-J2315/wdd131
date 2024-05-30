@@ -59,3 +59,12 @@ function heartClick(){
 
 document.getElementById('heart').addEventListener('click', heartClick);
 
+const hamburger = document.querySelector(".ham-menu");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
