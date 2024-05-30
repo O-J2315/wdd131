@@ -14,38 +14,53 @@
     </head>
 <body>
     <header>
-        <div class="header-wrapper" onclick="myFunction(this)">
-            <div class="ham-menu">
+        <div class="header-wrapper">
+            <div class="ham-menu" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-            <a href="#"><img id="logo" src="images/logo.webp" alt="logo-small" width="50" height="50"></a>
+            <a href="#"><img id="logo" src="images/logo.webp" alt="logo-small" width="50" height="50" loading="lazy"></a>
             <h3>OJ-e digital invitations</h3>
-            <a href="#"><img id="heart" src="images/heart.png" alt="heart" width="20" height="20"></a>
+            <a href="#"><img id="heart" name="stroke" src="images/heart1.png" alt="heart" width="20" height="20" loading="lazy"></a>
         </div>
     </header>
     <main>
         <div class="main-wrapper">
             <div class="title-img-container">
-                <h1>EXPLORE OUR DESIGNS!</h1>
-                                <!-- Slideshow container -->
+                <div class="title-h1">
+                    <h1>NEW BEAUTIFUL DESIGNS!</h1>
+                </div>                
+                <!-- Slideshow container -->
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                    <img src="images/bkImage.webp" alt="laptop" width="518" height="350">
+                        <picture>
+                            <source srcset="images/bkImage-large.webp" media="(min-width: 900px)">
+                            <img src="images/bkImage.webp" alt="Hero Photo" width="518" height="350" loading="lazy">
+                        </picture>
                     </div>
                 
                     <div class="mySlides fade">
-                    <img src="images/bkImage.webp" alt="laptop" width="518" height="350">
+                        <picture>
+                            <source srcset="images/bkImage1-large.webp" media="(min-width: 900px)">
+                            <img src="images/bkImage1.webp" alt="Hero Photo" width="518" height="350" loading="lazy">
+                        </picture>
                     </div>
                 
                     <div class="mySlides fade">
-                    <img src="images/bkImage.webp" alt="laptop" width="518" height="350">
+                        <picture>
+                            <source srcset="images/bkImage2-large.webp" media="(min-width: 900px)">
+                            <img src="images/bkImage2.webp" alt="Hero Photo" width="518" height="350" loading="lazy">
+                        </picture>
                     </div>
-                
-                    <a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a id="next" class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="mySlides fade">
+                        <picture>
+                            <source srcset="images/bkImage3-large.webp" media="(min-width: 900px)">
+                            <img src="images/bkImage3.webp" alt="Hero Photo" width="518" height="350" loading="lazy">
+                        </picture>
+                    </div>
                 </div>
                 <div class="buttons-bottom">
                     <a id="one" href="#">SEE GALLERY</a>
@@ -54,15 +69,15 @@
             </div>
             <div class="data-wrapper">
                 <div class="data-container">
-                    <img src="images/convenience.webp" alt="first-info" width="100" height="100">
+                    <img src="images/convenience.webp" alt="first-info" width="100" height="100" loading="lazy">
                     <p>
-                        <span>Convenience-</span> ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus porro at quam, culpa explicabo eveniet amet ipsam reprehenderit neque.
+                        <span>Convenience</span><br>We offer a convenient and efficient way to manage event invitations. Send invitations to your guests all in one place. This saves you time and effort compared to traditional methods like printing and mailing physical invitations or individually emailing each guest.
                     </p>
                 </div>
                 <div class="data-container">
-                    <img src="images/costEfectiveness.webp" alt="second-info" width="100" height="100">
+                    <img src="images/costEfectiveness.webp" alt="second-info" width="120" height="120" loading="lazy">
                     <p>
-                        <span>Cost-effectiveness-</span> ipsum dolor sit, amet consectetur adipisicing elit. Laborum necessitatibus assumenda dolor tenetur recusandae quisquam facere quis odit. Ex, pariatur?
+                        <span>Cost-effectiveness:</span><br>Online invitations can be more cost-effective than traditional paper invitations, especially for large events where printing and postage costs can add up quickly. We offer a variety of stylish and customizable digital designs, providing an eco-friendly alternative to paper invitations without sacrificing aesthetics.
                     </p>
                 </div>
             </div>
@@ -70,12 +85,12 @@
     </main>
     <footer>
         <div class="footer-wrapper">
-            <a href="#"><img src="images/logo.webp" alt="logo-small" width="80" height="80"></a>
-            <h2>OJ-E Digital Invitations<br><span><a href="#">Contact Us:</a></span><span><a href="#">More About Us:</a></span></h2>
+            <a href="#"><img src="images/logo.webp" alt="logo-small" width="80" height="80" loading="lazy"></a>
+            <h2>OJ-E Digital Invitations<br><span><a href="#"> Contact Us 📞</a></span><span><a href="#">+ Information ℹ️</a></span></h2>
             <div class="social-media-wrapper">
-                <img src="images/facebookIcon.webp" alt="logo-fb" width="30" height="30">
-                <img src="images/instagramIcon.webp" alt="logo-camera" width="30" height="30">
-                <img src="images/mailIcon.webp" alt="logo-mail" width="30" height="30">
+                <a href="https://www.facebook.com"><img src="images/facebookIcon.webp" alt="logo-fb" width="30" height="30" loading="lazy"></a>
+                <a href="https://www.instagram.com/j0sue_hernande2/"><img src="images/instagramIcon.webp" alt="logo-camera" width="30" height="30" loading="lazy"></a>
+                <a href="mailto:jhernandezap23@gmail.com"><img src="images/mailIcon.webp" alt="logo-mail" width="30" height="30" loading="lazy"></a>
             </div>
         </div>
     </footer>

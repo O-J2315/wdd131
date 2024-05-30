@@ -3,9 +3,6 @@ function myFunction(x) {
     x.classList.toggle("change");
   }
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
 function checkMobileView(){
   if (window.innerWidth < 800)
     return true;
@@ -14,23 +11,26 @@ function checkMobileView(){
   }
 }
   
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    if (checkMobileView())
-      setTimeout(showSlides, 3000); // Change image every 3 seconds
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 3 seconds
 }
+
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  plusDivs(slideIndex = n);
 }
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  plusDivs(slideIndex += n);
 }
 function hiddeArrows(){
   const nextButton = document.getElementById("next");
@@ -45,29 +45,17 @@ function showArrows(){
   prevButton.style.display = 'block';
 }
 
+//Making the heart image interactive
+function heartClick(){
+  const heartImg = document.getElementById('heart');
+  if(heartImg.getAttribute('name') == 'stroke'){
+    heartImg.setAttribute('src','images/heart2.png');
+    heartImg.setAttribute('name' , 'fill');
+  }else if(heartImg.getAttribute('name')=='fill') {
+    heartImg.setAttribute('src', 'images/heart1.png');
+    heartImg.setAttribute('name', 'stroke')
+  }
+}
 
+document.getElementById('heart').addEventListener('click', heartClick);
 
-
-
-
-
-
-
-
-window.onload = function() {
-  showSlides();
-  if(checkMobileView()){
-    hiddeArrows();
-  }else{
-    showArrows();
-  };
-};
-
-window.onresize = function() {
-  showSlides();
-  if(checkMobileView()){
-    hiddeArrows();
-  }else {
-    showArrows();
-  };
-};
