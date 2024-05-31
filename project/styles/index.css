@@ -337,7 +337,6 @@ box-shadow: 0 1rem 27px rgba(0, 0, 0, 0.05);
 .contactus-row figcaption {
     text-align: center;
     font-weight: 700;
-    padding: 1rem auto;
     width: inherit;
 }
 .form {
@@ -559,7 +558,7 @@ form select:invalid {
         transition: .5s ease;
         opacity: 95%;
         /* border-radius: 50%; */
-        box-shadow: 1rem rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1rem 27px rgba(0, 0, 0, 0.05);
     }
     .container {
         position: relative;
