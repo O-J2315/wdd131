@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> OJ-E Digital Invitations | Form </title>
+        <title> OJ-E Digital Invitations | Contact Us </title>
         <meta name="author" content="Josue Hernandez">
         <meta name="description" content="Online Invitations for wedding, birthday parties, social events, etc.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +24,49 @@
             <h3>OJ-e digital invitations</h3>
             <a href="#"><img id="heart" name="stroke" src="images/heart1.png" alt="heart" width="20" height="20" loading="lazy"></a>
         </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item" id="home">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutUs.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item" id="signup">
+                    <a  href="form.html" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <form>
-            Sign Up Form
-        </form>
+        <div class="contactus-wrapper">
+            <h2>Submit your response and we will get in contact really soon!</h2>
+            <div class="form">
+                <h1>SIGN UP</h1>
+                <form id="myForm" action="submitform.html" method="GET">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                    <label for="selectEvent">Event Type:</label>
+                    <select id="selectEvent" name="selectEvent" required>
+                        <option value="" selected disabled>Select your event...</option>
+                    </select>
+            
+                    <label for="message">Especifications:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            
+                    <input id="submitForm" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-wrapper">
             <a href="#"><img src="images/logo.webp" alt="logo-small" width="80" height="80" loading="lazy"></a>
-            <h2>OJ-E Digital Invitations<br><span><a href="index.html"> Home 🏠</a></span><span><a href="aboutUs.html">About Us 👥</a></span></h2>
+            <h2>OJ-E Digital Invitations<br><span><a href="index.html">Home 🏠</a></span><span><a href="form.html">Sign Up ✅</a></span></h2>
             <div class="social-media-wrapper">
                 <a href="https://www.facebook.com"><img src="images/facebookIcon.webp" alt="logo-fb" width="30" height="30" loading="lazy"></a>
                 <a href="https://www.instagram.com/j0sue_hernande2/"><img src="images/instagramIcon.webp" alt="logo-camera" width="30" height="30" loading="lazy"></a>
