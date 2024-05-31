@@ -385,9 +385,12 @@ form select:valid {
 form input[type="submit"]{
     margin-top: 4rem;
     font-size: 1.4rem;
+    font-weight: 400;
     transition: .4s ease;
     background-color: rgb(232, 255, 244);
     color: #3B3B3B;
+    border: solid 2px #3B3B3B;
+
 }
 form input[type="submit"]:hover{
     background-color: rgb(64, 158, 127);
