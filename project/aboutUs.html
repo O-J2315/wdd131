@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/index.css">
-        <script defer src="scripts/index.js"></script>
+        <script defer src="scripts/aboutUs.js"></script>
     </head>
 <body>
     <header>
@@ -24,9 +24,55 @@
             <h3>OJ-e digital invitations</h3>
             <a href="#"><img id="heart" name="stroke" src="images/heart1.png" alt="heart" width="20" height="20" loading="lazy"></a>
         </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item" id="home">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutUs.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item" id="signup">
+                    <a  href="form.html" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        Contact Us
+        <div class="contactus-wrapper">
+            <h1>ABOUT US</h1>
+            <h2>WE ARE EXPERT DESIGNERS</h2>
+            <P>Design is an ever-evolving field, and expert designers are committed to continuous learning and growth. We stay updated on the latest trends, technologies, and best practices to deliver cutting-edge designs that push the boundaries of creativity and innovation.</P>
+            <div class="contactus-row">
+                <figure>
+                    <picture>
+                        <source srcset="images/bkImage-large.webp" media="(min-width: 900px)">
+                        <img src="images/odeth.jpg" alt="Hero Photo" width="100" height="100" loading="lazy">
+                    </picture>
+                    <figcaption>
+                        Odeth Cornejo | CEO & Designer
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/bkImage1-large.webp" media="(min-width: 900px)">
+                        <img src="images/rebeca.webp" alt="Hero Photo" width="100" height="100" loading="lazy">
+                    </picture>
+                    <figcaption>
+                        Rebeca Hernandez | Designer
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="images/bkImage2-large.webp" media="(min-width: 900px)">
+                        <img src="images/josue.jpg" alt="Hero Photo" width="100" height="100" loading="lazy">
+                    </picture>
+                    <figcaption>
+                        Josue Hernandez | IT & COO
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-wrapper">
