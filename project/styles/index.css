@@ -304,7 +304,8 @@ box-shadow: 0 1rem 27px rgba(0, 0, 0, 0.05);
     /* border: solid 1px red; */
 }
 .contactus-row img {
-    height: 100%;
+    width: 90%;
+    height: auto;
     align-self: center;
     box-shadow: 0 1rem 27px rgba(0, 0, 0, 0.05);
 }
@@ -527,6 +528,16 @@ form select:invalid {
     input[type="submit"]{
         border-radius: 0;
         border: 0;
+    }
+    .contactus-row figure {
+        display: block;
+        width: 100%;
+        border: solid 1px red;
+        justify-content: center;
+    }
+    .contactus-row img {
+        width: 100%;
+        border: solid 1px red;
     }
 }
 
