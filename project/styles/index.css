@@ -390,7 +390,8 @@ form input[type="submit"]{
     color: #3B3B3B;
 }
 form input[type="submit"]:hover{
-    background-color: rgb(58, 147, 118);
+    background-color: rgb(64, 158, 127);
+    color: white;
     transition: .4s ease;
 }
 form select {
