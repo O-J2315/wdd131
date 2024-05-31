@@ -359,7 +359,7 @@ form textarea {
     transition: .3s ease;
 }
 form textarea:invalid {
-    border-bottom: .3rem solid red;
+    border-bottom: .4rem solid red;
     transition: .3s ease;
 }
 form textarea:focus {
@@ -375,7 +375,7 @@ form input[type='text']:valid {
     transition: .3s ease;
 }
 form textarea:valid {
-    border-bottom: .3rem solid rgb(200, 255, 237);
+    border-bottom: .4rem solid rgb(200, 255, 237);
     transition: .3s ease;
 }
 form select:valid {
