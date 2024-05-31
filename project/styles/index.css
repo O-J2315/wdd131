@@ -384,12 +384,13 @@ form select:valid {
 }
 form input[type="submit"]{
     margin-top: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: .4s ease;
-    background-color: rgb(255, 232, 232);
+    background-color: rgb(232, 255, 244);
+    color: #3B3B3B;
 }
 form input[type="submit"]:hover{
-    background-color: rgb(200, 255, 237);
+    background-color: rgb(58, 147, 118);
     transition: .4s ease;
 }
 form select {
