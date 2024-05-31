@@ -46,14 +46,16 @@ function mobileMenu() {
 }
 
 //Making the heart image interactive
-function heartClick(){
+function heartClick() {
+
   const heartImg = document.getElementById('heart');
-  if(heartImg.getAttribute('name') == 'stroke'){
-    heartImg.setAttribute('src','images/heart2.png');
-    heartImg.setAttribute('name' , 'fill');
-  }else if(heartImg.getAttribute('name')=='fill') {
+
+  if (heartImg.getAttribute('alt') == 'stroke') {
+    heartImg.setAttribute('src', 'images/heart2.png');
+    heartImg.setAttribute('alt', 'fill');
+  } else if (heartImg.getAttribute('alt') == 'fill') {
     heartImg.setAttribute('src', 'images/heart1.png');
-    heartImg.setAttribute('name', 'stroke')
+    heartImg.setAttribute('alt', 'stroke');
   }
 }
 
