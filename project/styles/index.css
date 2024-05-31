@@ -399,7 +399,7 @@ form input[type="submit"]{
 
 }
 form input[type="submit"]:hover{
-    background-color: rgb(64, 158, 127);
+    background-color: rgb(82, 206, 165);
     color: white;
     transition: .4s ease;
 }
