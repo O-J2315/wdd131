@@ -34,8 +34,11 @@ function myFunction(x) {
 //Toggle the nav menu in mobile view
 const hamburger = document.querySelector(".ham-menu");
 const navMenu = document.querySelector(".nav-menu");
+
+if(hamburger != null){
+  hamburger.addEventListener("click", mobileMenu);
+}
   
-hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
@@ -54,7 +57,9 @@ function heartClick(){
   }
 }
 
-document.getElementById('heart').addEventListener('click', heartClick);
+if(document.getElementById('heart') != null){
+  document.getElementById('heart').addEventListener('click', heartClick);
+}
 
 //Cookies to see the page location in the nav
 const url = window.location.href;
@@ -69,27 +74,56 @@ document.querySelectorAll('li a').forEach(function(item) {
 //Specific JS for the form
 const form = document.getElementById('myForm');
 
-// Add event listener for form submission
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+  // Add event listener for form submission
+if(form != null){
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
 
-  if (name.trim() === '' || email.trim() === '') {
-      alert('Please fill out all fields.');
-      return;
-  }
+    if (name.trim() === '' || email.trim() === '') {
+        alert('Please fill out all fields.');
+        return;
+    }
 
-  form.submit();
-});
-
+    form.submit();
+  });
+}
 const eventSelect = document.getElementById("selectEvent");
 
 events.forEach((event) => {
   let option = document.createElement("option");
   option.value=event.id;
   option.innerText = `${event.name}`;
-  eventSelect.appendChild(option);
+  if(eventSelect != null){
+    eventSelect.appendChild(option);
+  }
 });
 
+if(hamburger == null){
+  window.onload = checkFirstTime;
+  document.getElementById("return").addEventListener("click", function(){
+    window.location.href = "index.html";
+  })
+}
+function checkFirstTime(){
+  let counter = parseInt(localStorage.getItem('numOfClients'));
+  if(isNaN(counter)){
+      counter = 0;
+  }
+  if(counter!=0){
+    addClient();
+  }else{
+      localStorage.setItem('numOfClients', counter.toString());
+      addClient();
+  };
+};
+
+function addClient() {
+  let counter = parseInt(localStorage.getItem('numOfClients'));
+  counter = counter + 1;
+  localStorage.setItem('numOfClients', counter.toString());
+  document.getElementById('counter').innerText = localStorage.getItem('numOfClients');
+  console.log(counter);
+}
