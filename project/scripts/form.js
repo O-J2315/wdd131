@@ -26,18 +26,20 @@ const events = [
   }
 ];
 
-
 // Toggle Bar menu
 function myFunction(x) {
     x.classList.toggle("change");
-  }
+}
 
-function checkMobileView(){
-  if (window.innerWidth < 800)
-    return true;
-  else {
-    return false;
-  }
+//Toggle the nav menu in mobile view
+const hamburger = document.querySelector(".ham-menu");
+const navMenu = document.querySelector(".nav-menu");
+  
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
 //Making the heart image interactive
@@ -54,6 +56,7 @@ function heartClick(){
 
 document.getElementById('heart').addEventListener('click', heartClick);
 
+//Cookies to see the page location in the nav
 const url = window.location.href;
 document.querySelectorAll('li a').forEach(function(item) {
   if (url.includes(item.getAttribute('href'))) {
@@ -62,6 +65,8 @@ document.querySelectorAll('li a').forEach(function(item) {
   }
 });
 
+
+//Specific JS for the form
 const form = document.getElementById('myForm');
 
 // Add event listener for form submission
@@ -87,3 +92,4 @@ events.forEach((event) => {
   option.innerText = `${event.name}`;
   eventSelect.appendChild(option);
 });
+
