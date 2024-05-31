@@ -108,8 +108,23 @@
     justify-content: space-around;
     background-color: var(--LightGray);
 }
-.footer-wrapper h3 {
+.footer-wrapper-row {
+    display: flex;
+    flex-direction: column;
+}
+.footer-wrapper-row h3,a {
     text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.footer-wrapper-row a{
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    /* border: solid 1px red; */
+}
+.footer-wrapper-row a:hover {
+    color: var(--BlueCool);
 }
 .header-wrapper #logo {
     border-radius: 2rem;
